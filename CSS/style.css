@@ -1,0 +1,192 @@
+@import url("https://fonts.cdnfonts.com/css/persian");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Vazirmatn;
+  width: 100%;
+  display: flex;
+  position: relative;
+  direction: rtl;
+  transition: 0.2s;
+}
+.main {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/image/dark_tint.png"),
+    url("../image/—Pngtree—abstract\ technology\ background\ technical\ electric_1252603.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+.title {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+  display: flex;
+}
+.search-box {
+  background-color: white;
+  width: 600px;
+  height: 180px;
+  box-shadow: 0px 2px 15px 1px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 40px;
+  margin-top: 350px;
+}
+.main_div {
+  height: 100%;
+  padding: 30px;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+h4 {
+  direction: rtl;
+  display: flex;
+  font-weight: 430;
+  color: #003b6c;
+}
+input,
+textarea {
+  background: none;
+  color: rgb(0, 0, 0, 0.7);
+  font-size: 16px;
+  padding: 7px 10px;
+  width: 400px;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 139, 0.15);
+  direction: rtl;
+  transition: 0.2s;
+  font-family: Vazirmatn;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid rgb(128, 128, 128, 0.6);
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 139, 0.2);
+}
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -9px;
+  font-size: 12px;
+  color: #003b6c;
+  right: 13px;
+  font-weight: bold;
+}
+input:focus ~ .bar:before,
+textarea:focus ~ .bar:before {
+  width: 320px;
+}
+
+input[type="password"] {
+  letter-spacing: 0.3em;
+}
+
+.group {
+  display: flex;
+  position: relative;
+}
+
+label {
+  color: #c6c6c6;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  right: 13px;
+  top: 7px;
+  transition: 300ms ease all;
+  background-color: #fff;
+  padding: 0 1px;
+  display: flex;
+}
+
+button {
+  font-family: Vazirmatn;
+  font-weight: bold;
+  background-color: #02346d;
+  color: #ffffff;
+  border: none;
+  margin-right: 10px;
+  border-radius: 20px;
+  border: 1px solid #0000001a;
+  transition: 0.145s;
+  padding: 0px 14px;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.55);
+}
+button:active {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 675.98px) {
+  .search-box {
+    width: calc(100% - 30px);
+    padding: 5px 10px;
+  }
+  .main_div {
+    padding: 0 0 15px 0;
+  }
+}
+
+@media (max-width: 504.98px) {
+  .search-box {
+    width: calc(100% - 30px);
+    padding: 5px 10px;
+    height: 85%;
+  }
+  .main_div {
+    width: 100%;
+    padding: 0 0 15px 0;
+  }
+  input {
+    width: 100%;
+  }
+  button {
+    margin: 0;
+    border-radius: 20px;
+    position: absolute;
+    top: 65px;
+    width: 100%;
+    padding: 7px 0;
+    background-color: #02346d;
+    color: #ffffff;
+  }
+  button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0, .9);
+  }
+  button:active {
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (max-width: 424.98px) {
+  .search-box {
+    width: calc(100% - 30px);
+    padding: 5px 10px;
+  }
+  button {
+    margin: 0;
+    border-radius: 4px;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    padding: 5px 0;
+  }
+}
