@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/image/dark_tint.png"),
+  background-image: url("../image/dark_tint.png"),
     url("../image/—Pngtree—abstract\ technology\ background\ technical\ electric_1252603.jpg");
   background-size: cover;
   width: 100%;
@@ -169,7 +169,7 @@ button:active {
   }
   button:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0, .9);
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0, 0.9);
   }
   button:active {
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
